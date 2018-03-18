@@ -251,7 +251,7 @@ $(document).ready(function () {
 
     // Яндекс карта
 
-    function mapInit() {
+    ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [55.729012, 37.629215],
                 zoom: 16,
@@ -297,15 +297,11 @@ $(document).ready(function () {
 
         //myMap.behaviors
            // .disable(['scrollZoom', 'rightMouseButtonMagnifier'])
-
-        ymapsTouchScroll(map);
-    }
-
-    ymaps.ready(mapInit);
+    });
 
     var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-    function ymapsTouchScroll(map) {
+    function myMap(map) {
         var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
             _ref$preventScroll = _ref.preventScroll,
             preventScroll = _ref$preventScroll === undefined ? true : _ref$preventScroll,
