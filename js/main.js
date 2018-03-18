@@ -301,7 +301,7 @@ $(document).ready(function () {
 
     var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-    function myMap(map) {
+    function ymapsTouchScroll(myMap) {
         var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
             _ref$preventScroll = _ref.preventScroll,
             preventScroll = _ref$preventScroll === undefined ? true : _ref$preventScroll,
